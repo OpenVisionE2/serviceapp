@@ -12,7 +12,7 @@ CONFIG += link_pkgconfig
 PKGCONFIG += python enigma2 uchardet openssl
 
 QMAKE_CXXFLAGS = -include Python.h
-DEFINES += OPENPLI_ISERVICE_VERSION=1 DEBUG=1
+DEFINES += OPENVISION_ISERVICE_VERSION=1 DEBUG=1
 
 DESTDIR = ./output_686/
 OBJECTS_DIR = ./output_686/obj/
@@ -31,9 +31,9 @@ MOC_DIR = ./output_mips32el/moc/
 RCC_DIR = ./output_mips32el/rcc/
 UI_DIR = ./output_mips32el/ui/
 
-DEFINES += OPENPLI_ISERVICE_VERSION=2 DEBUG=1 HAVE_EPG=1
+DEFINES += OPENVISION_ISERVICE_VERSION=2 DEBUG=1 HAVE_EPG=1
 
-SYSROOT = /home/marko/Projects/Enigma2/openpli-oe-core2/build/tmp/sysroots/vusolose
+SYSROOT = /home/user/enigma2/openvision-development-platform/build/tmp/sysroots/stb
 CROSS_COMPILE           = mipsel-oe-linux-
 
 QMAKE_CC                = $${CROSS_COMPILE}gcc

@@ -1,4 +1,4 @@
-// dummied source from openpli-enigma2
+// dummied source from enigma2
 #ifndef __wrappers_h
 #define __wrappers_h
 

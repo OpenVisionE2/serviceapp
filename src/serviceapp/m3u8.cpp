@@ -129,7 +129,7 @@ int M3U8VariantsExplorer::getVariantsFromMasterUrl(const std::string& url, Heade
                     __func__, X509_verify_cert_error_string(SSL_get_verify_result(ssl)));
         }
     }
-    std::string userAgent = "Enigma2 HbbTV/1.1.1 (+PVR+RTSP+DL;OpenPLi;;;)";
+    std::string userAgent = "Enigma2 HbbTV/1.1.1 (+PVR+RTSP+DL;OpenVision;;;)";
     HeaderMap::const_iterator it;
     if ((it = headers.find("User-Agent")) != headers.end())
     {

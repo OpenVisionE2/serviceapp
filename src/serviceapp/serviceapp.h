@@ -111,7 +111,7 @@ public:
 #endif
 	RESULT start();
 	RESULT stop();
-#if OPENPLI_ISERVICE_VERSION > 1
+#if OPENVISION_ISERVICE_VERSION > 1
 	RESULT setTarget(int target, bool noaudio=false){return -1;}
 #else
 	RESULT setTarget(int target){return -1;}

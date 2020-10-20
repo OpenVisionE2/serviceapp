@@ -32,7 +32,7 @@ CXXFLAGS="$PYTHON_CPPFLAGS -include Python.h $ENIGMA2_CFLAGS $CXXFLAGS"
 SAVE_LDFLAGS="$LDFLAGS"
 LDFLAGS="$PYTHON_LIBS $LDFLAGS -shared -fPIC"
 
-AC_MSG_CHECKING([for openpli iservice.h version(2)])
+AC_MSG_CHECKING([for openvision iservice.h version(2)])
 AC_LINK_IFELSE(
     [AC_LANG_PROGRAM(
 [#include <enigma2/lib/service/iservice.h>
@@ -69,10 +69,10 @@ AC_LINK_IFELSE(
 };],[MyPlayableService service;])
     ],[
         AC_MSG_RESULT([yes])
-        AC_DEFINE(OPENPLI_ISERVICE_VERSION, 2)
+        AC_DEFINE(OPENVISION_ISERVICE_VERSION, 2)
     ],[
         AC_MSG_RESULT([no])
-        AC_DEFINE(OPENPLI_ISERVICE_VERSION, 1)
+        AC_DEFINE(OPENVISION_ISERVICE_VERSION, 1)
     ])
 
 AC_PATH_PROG(MSGFMT, msgfmt, AC_MSG_ERROR(Could not find msgfmt))

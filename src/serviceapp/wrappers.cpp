@@ -1,4 +1,4 @@
-// dummied source from openpli enigma2
+// dummied source from enigma2
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
